@@ -1,6 +1,6 @@
 const prezzoAlKm = 0.21; 
 const scontoMinorenni = 0.168;
-const scontoOver40 = 0.128;
+const scontoOver40 = 0.126;
 let eta = prompt('quanti anni hai?');
 let km = prompt('quanti km percorrerai?');
 
