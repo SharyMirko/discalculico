@@ -8,7 +8,7 @@ function calcola() {
 if(eta < 18) {
     let prezzoscontato = km * scontoMinorenni;
     document.getElementById('costo').innerHTML = prezzoscontato.toFixed(2) + "€";
-} else if(eta >= 40) {
+} else if(eta >= 65) {
     let prezzoscontato = km * scontoOver65;
     document.getElementById('costo').innerHTML = prezzoscontato.toFixed(2) + " €";
 } else {
