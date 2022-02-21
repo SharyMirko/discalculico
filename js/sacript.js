@@ -1,9 +1,10 @@
 const prezzoAlKm = 0.21; 
 const scontoMinorenni = 0.168;
 const scontoOver40 = 0.126;
-let eta = prompt('quanti anni hai?');
-let km = prompt('quanti km percorrerai?');
+let eta = document.getElementById('eta').value;
+let km = document.getElementById('km').value;
 
+function calcola() {
 if(eta < 18) {
     let prezzoscontato = km * scontoMinorenni;
     document.getElementById('costo').innerHTML = prezzoscontato.toFixed(2) + "€";
@@ -13,4 +14,5 @@ if(eta < 18) {
 } else {
     let prezzotot = km * prezzoAlKm;
     document.getElementById('costo').innerHTML = prezzotot.toFixed(2) + "€";
+}
 }
